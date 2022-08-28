@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'LogLib_Example' do
+  pod 'LogLib', :path => '../'
+
+  target 'LogLib_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
