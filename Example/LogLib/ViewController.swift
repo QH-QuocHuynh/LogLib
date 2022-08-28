@@ -7,18 +7,18 @@
 //
 
 import UIKit
+import LogLib
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        Log.out(state: .info, msg: "Log is info", showHierarchy: true)
+        Log.out(state: .todo, msg: "Log is todo", showHierarchy: true)
+        Log.out(state: .url, msg: "Log is url")
+        Log.out(state: .warning, msg: "Log is warnning")
+        Log.out(state: .error, msg: "Log is error")
+        Log.out(state: .success, msg: "Log is success")
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 }
-
